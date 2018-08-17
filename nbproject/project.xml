@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.web.clientproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/clientside-project/1">
+            <name>MobileProject</name>
+        </data>
+        <libraries xmlns="http://www.netbeans.org/ns/cdnjs-libraries/1">
+            <library name="jplayer" version="2.9.2">
+                <file localPath="public_html/js/libs/jplayer/add-on/jplayer.playlist.js" path="add-on/jplayer.playlist.js"/>
+                <file localPath="public_html/js/libs/jplayer/add-on/jplayer.playlist.min.js" path="add-on/jplayer.playlist.min.js"/>
+                <file localPath="public_html/js/libs/jplayer/add-on/jquery.jplayer.inspector.js" path="add-on/jquery.jplayer.inspector.js"/>
+                <file localPath="public_html/js/libs/jplayer/add-on/jquery.jplayer.inspector.min.js" path="add-on/jquery.jplayer.inspector.min.js"/>
+                <file localPath="public_html/js/libs/jplayer/jplayer/jquery.jplayer.js" path="jplayer/jquery.jplayer.js"/>
+                <file localPath="public_html/js/libs/jplayer/jplayer/jquery.jplayer.min.js" path="jplayer/jquery.jplayer.min.js"/>
+                <file localPath="public_html/js/libs/jplayer/jplayer/jquery.jplayer.swf" path="jplayer/jquery.jplayer.swf"/>
+                <file localPath="public_html/js/libs/jplayer/popcorn/popcorn.jplayer.js" path="popcorn/popcorn.jplayer.js"/>
+                <file localPath="public_html/js/libs/jplayer/popcorn/popcorn.jplayer.min.js" path="popcorn/popcorn.jplayer.min.js"/>
+                <file localPath="public_html/js/libs/jplayer/skin/blue.monday/css/jplayer.blue.monday.css" path="skin/blue.monday/css/jplayer.blue.monday.css"/>
+                <file localPath="public_html/js/libs/jplayer/skin/blue.monday/css/jplayer.blue.monday.min.css" path="skin/blue.monday/css/jplayer.blue.monday.min.css"/>
+                <file localPath="public_html/js/libs/jplayer/skin/blue.monday/image/jplayer.blue.monday.jpg" path="skin/blue.monday/image/jplayer.blue.monday.jpg"/>
+                <file localPath="public_html/js/libs/jplayer/skin/blue.monday/image/jplayer.blue.monday.seeking.gif" path="skin/blue.monday/image/jplayer.blue.monday.seeking.gif"/>
+                <file localPath="public_html/js/libs/jplayer/skin/blue.monday/image/jplayer.blue.monday.video.play.png" path="skin/blue.monday/image/jplayer.blue.monday.video.play.png"/>
+                <file localPath="public_html/js/libs/jplayer/skin/pink.flag/css/jplayer.pink.flag.css" path="skin/pink.flag/css/jplayer.pink.flag.css"/>
+                <file localPath="public_html/js/libs/jplayer/skin/pink.flag/css/jplayer.pink.flag.min.css" path="skin/pink.flag/css/jplayer.pink.flag.min.css"/>
+                <file localPath="public_html/js/libs/jplayer/skin/pink.flag/image/jplayer.pink.flag.jpg" path="skin/pink.flag/image/jplayer.pink.flag.jpg"/>
+                <file localPath="public_html/js/libs/jplayer/skin/pink.flag/image/jplayer.pink.flag.seeking.gif" path="skin/pink.flag/image/jplayer.pink.flag.seeking.gif"/>
+                <file localPath="public_html/js/libs/jplayer/skin/pink.flag/image/jplayer.pink.flag.video.play.png" path="skin/pink.flag/image/jplayer.pink.flag.video.play.png"/>
+            </library>
+            <library name="jquery" version="3.2.1">
+                <file localPath="public_html/js/libs/jquery/jquery.js" path="jquery.js"/>
+                <file localPath="public_html/js/libs/jquery/jquery.min.js" path="jquery.min.js"/>
+            </library>
+        </libraries>
+    </configuration>
+</project>

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<!--
+Student: sneydr <sneydr@sheridan.desire2learn.com>
+StudentID: 991404158
+Course: PROG20261
+Project: MobileProject
+-->
+
+<html>
+    <head>
+        <title>MobileProject</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+        <link rel="stylesheet" href="js/libs/jplayer/skin/pink.flag/css/jplayer.pink.flag.min.css" type="text/css"/>
+        <link rel="stylesheet" href="js/libs/jplayer/skin/pink.flag/css/jplayer.pink.flag.min.css" type="text/css">
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="jquery.jplayer.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+        <style>
+            img {
+                height: auto;
+                width: auto;
+            }
+            #jp_container_1 {
+                width: 100%;
+                margin: 0%;
+                padding: 0%;
+            }
+
+
+
+
+        </style>
+
+    </head>
+    <body>
+        <div data-role="page">
+            <div data-role="header" data-theme="c">
+                <h1>Lïstën: Login or Register</h1>
+            </div><!-- /header -->
+
+            <div role="main" class="ui-content">
+
+                <h2 class="mc-text-center">Welcome!</h2>
+
+                <p class="mc-top-margin-1-5"><b>Existing Users</b></p>
+
+                <a href="#signinpage" class="ui-btn ui-btn-b ui-corner-all">Sign In</a>
+
+                <p class="mc-top-margin-1-5"><b>Don't have an account?</b></p>
+
+                <a href="#signuppage" class="ui-btn ui-btn-b ui-corner-all">Sign Up</a>
+
+                <p></p>
+            </div>
+        </div>
+
+        <div data-role="page" id="signinpage">
+
+            <div data-role="header" data-theme="c">
+                <h1>Lïstën: Login</h1>
+            </div><!-- /header -->
+
+            <div data-role="main" data-theme="c" class="ui-content">
+
+                <h3>Sign In</h3>
+
+                <label for="txt-email">Email Address</label>
+
+                <input type="text" name="txt-email" id="txt-email" value="">
+
+                <label for="txt-password">Password</label>
+
+                <input type="password" name="txt-password" id="txt-password" value="">
+
+                <fieldset data-role="controlgroup">
+
+                    <input type="checkbox" name="chck-rememberme" id="chck-rememberme" checked="">
+
+                    <label for="chck-rememberme">Remember me</label>
+
+                </fieldset>
+
+                <a href="#dlg-invalid-credentials" data-rel="popup" data-transition="pop" data-position-to="window" id="btn-signin" class="ui-btn ui-btn-b ui-corner-all mc-top-margin-1-5">Submit</a>
+
+
+                <div data-role="popup" id="dlg-invalid-credentials" data-dismissible="false" style="max-width:400px;">
+
+                    <div role="main" class="ui-content">
+
+                        <h3 class="mc-text-danger">Login Failed</h3>
+
+                        <p>Did you enter the right credentials?</p>
+
+                        <div class="mc-text-center"><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-b mc-top-margin-1-5">OK</a></div>
+
+                    </div>
+
+                </div>
+
+            </div><!-- /content -->
+
+        </div>
+
+
+        <div data-role="page" id="signuppage">
+
+            <div data-role="header" data-theme="c">
+
+                <h1>Lïstën: Register</h1>
+
+            </div><!-- /header -->
+
+            <div role="main" class="ui-content">
+
+                <h3>Sign Up</h3>
+
+                <label for="txt-first-name">First Name</label>
+
+                <input type="text" name="txt-first-name" id="txt-first-name" value="">
+
+                <label for="txt-last-name">Last Name</label>
+
+                <input type="text" name="txt-last-name" id="txt-last-name" value="">
+
+                <label for="txt-email">Email Address</label>
+
+                <input type="text" name="txt-email" id="email" value="">
+
+                <label for="txt-password">Password</label>
+
+                <input type="password" name="txt-password" id="password" value="">
+
+                <label for="txt-password-confirm">Confirm Password</label>
+
+                <input type="password" name="txt-password-confirm" id="txt-password-confirm" value="">
+
+                <a href="#dlg-invalid-registry" data-rel="popup" data-transition="pop" data-position-to="window" id="btn-signup" class="ui-btn ui-btn-b ui-corner-all mc-top-margin-1-5">Submit</a>
+
+                <div data-role="popup" id="dlg-sign-up-sent" data-dismissible="false" style="max-width:400px;">
+
+                    <div data-role="header">
+
+                        <h1>Almost done...</h1>
+
+                    </div>
+
+                    <div role="main" class="ui-content">
+
+                        <h3>Successfully Registered!</h3>
+
+                        <p>Welcome to Lïstën! Please feel free to start listening to any music you'd like.</p>
+
+                        <div class="mc-text-center"><a href="#signinpage" class="ui-btn ui-corner-all ui-shadow ui-btn-b mc-top-margin-1-5">OK</a></div>
+
+                    </div>
+
+                </div>
+
+                <div data-role="popup" id="dlg-invalid-registry" data-dismissible="false" style="max-width:400px;">
+
+                    <div role="main" class="ui-content">
+
+                        <h3 class="mc-text-danger">Registry Failed</h3>
+
+                        <p>Did you enter the right credentials?</p>
+
+                        <div class="mc-text-center"><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-b mc-top-margin-1-5">Try Again</a></div>
+
+                    </div>
+
+                </div>
+
+            </div><!-- /content -->
+
+        </div><!-- /page -->
+        <div data-role="page" id="home">
+            <div data-role="header">
+                <h1>Lïstën Song Player</h1>
+            </div>
+            <div data-role="content">
+                <p id="info">Connect</p>
+                <div>
+                    <ul id="playlist" data-role="listview" data-filter="true" data-filter-placeholder="Search Songs..." data-inset="true">
+                    </ul>
+                </div><br>
+
+
+                <div data-role="footer" data-position="fixed" >
+                    <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                    <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+                        <div class="jp-type-single">
+                            <div class="jp-gui jp-interface">
+                                <div  class="jp-volume-controls">
+                                    <button class="jp-mute" role="button" tabindex="0">mute</button>
+                                    <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+                                    <div class="jp-volume-bar">
+                                        <div class="jp-volume-bar-value"></div>
+                                    </div>
+                                </div>
+                                <div class="jp-controls-holder">
+                                    <div class="jp-controls">
+                                        <button class="jp-play" role="button" tabindex="0">play</button>
+                                        <button class="jp-stop" role="button" tabindex="0">stop</button>
+                                    </div>
+                                    <div class="jp-progress">
+                                        <div class="jp-seek-bar">
+                                            <div class="jp-play-bar"></div>
+                                        </div>
+                                    </div>
+                                    <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+                                    <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+                                    <div class="jp-toggles">
+                                        <button class="jp-repeat" role="button" tabindex="0">repeat</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="jp-details">
+                                <div class="jp-title" aria-label="title">&nbsp;</div>
+                            </div>
+                            <div class="jp-no-solution">
+                                <span>Update Required</span>
+                                To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <script type="text/javascript">
+
+
+
+
+            $(document).on("pagecreate", function () {
+
+
+                var $info = $("#info");
+                var apiKey = "NS5W1018V0FKM3EU";
+                var url1 = "https://freemusicarchive.org/api/get/tracks.json?api_key=" + apiKey;
+                var url2 = "https://freemusicarchive.org/api/get/albums.json?api_key=" + apiKey;
+                var json1;
+                var json2;
+                var $playlist = $("#playlist");
+                $.ajax({
+                    url: url1,
+                    method: "POST",
+                    dataType: "text",
+                    cache: false,
+                    error: function () {
+                        $info.show();
+                        $info.text("Error: Could not connect!");
+                    },
+                    success: function (data) {
+                        json1 = JSON.parse(data);
+                        $.ajax({
+                            url: url2,
+                            method: "POST",
+                            dataType: "text",
+                            cache: false,
+                            error: function () {
+                                $info.text("Error: Cannot get data!");
+                            },
+                            success: function (data) {
+                                json2 = JSON.parse(data);
+                                //console.log(json2.dataset[0]);
+
+                            }
+                        });
+                        //console.log(json1.dataset[0]);                           
+
+
+                    }
+                });
+
+                
+                $info.unbind().click(function () {
+
+
+                    console.log(json1);
+                    $info.hide();
+                    for (var i = 0; i < 10; i++) {
+                        $playlist.append('<li id="' + i + '" ><a href="#">' + '<img src="' + json2.dataset[i].album_image_file + '" />' + '<h3>' + json1.dataset[i].track_title + '</h3>' + '<p>' + json2.dataset[i].artist_name + " ■ " + json2.dataset[i].album_title + '</p>' + '<a><li>')
+
+                    }
+                    console.log("test");
+                    $playlist.listview("refresh");
+                
+
+
+
+                });
+
+                $playlist.delegate("li", "tap", function (event) {
+                    console.log($(this).attr("id"));
+                    for (key in json1.dataset) {
+                        if (json1.dataset.hasOwnProperty(key)) {
+                            if ($(this).attr("id") === "0") {
+                                console.log("yes");
+                                $("#jquery_jplayer_1").jPlayer("setMedia", {mp3: "1.Night_Owl.mp3", title: json1.dataset[0].track_title});
+                                $("#jquery_jplayer_1").jPlayer("play");
+
+                            } else if ($(this).attr("id") === "1") {
+                                console.log("yes");
+                                $("#jquery_jplayer_1").jPlayer("setMedia", {mp3: "2.Enthusiast.mp3", title: json1.dataset[1].track_title});
+                                $("#jquery_jplayer_1").jPlayer("play");
+                            } else if ($(this).attr("id") === "2") {
+                                console.log("yes");
+                                $("#jquery_jplayer_1").jPlayer("setMedia", {mp3: "3.Siesta.mp3", title: json1.dataset[2].track_title});
+                                $("#jquery_jplayer_1").jPlayer("play");
+                            } else if ($(this).attr("id") === "3") {
+                                console.log("yes");
+                                $("#jquery_jplayer_1").jPlayer("setMedia", {mp3: "4.Its_Your_Birthday.mp3", title: json1.dataset[3].track_title});
+                                $("#jquery_jplayer_1").jPlayer("play");
+                            } else if ($(this).attr("id") === "4") {
+                                console.log("yes");
+                                $("#jquery_jplayer_1").jPlayer("setMedia", {mp3: "5.Epic_Song.mp3", title: json1.dataset[4].track_title});
+                                $("#jquery_jplayer_1").jPlayer("play");
+                            } else if ($(this).attr("id") === "5") {
+                                console.log("yes");
+                                $("#jquery_jplayer_1").jPlayer("setMedia", {mp3: "6.Hachiko_The_Faithtful_Dog.mp3", title: json1.dataset[5].track_title});
+                                $("#jquery_jplayer_1").jPlayer("play");
+                            } else if ($(this).attr("id") === "6") {
+                                console.log("yes");
+                                $("#jquery_jplayer_1").jPlayer("setMedia", {mp3: "7.Fater_Lee.mp3", title: json1.dataset[6].track_title});
+                                $("#jquery_jplayer_1").jPlayer("play");
+                            } else if ($(this).attr("id") === "7") {
+                                console.log("yes");
+                                $("#jquery_jplayer_1").jPlayer("setMedia", {mp3: "8.RUNNING_WATERS.mp3", title: json1.dataset[7].track_title});
+                                $("#jquery_jplayer_1").jPlayer("play");
+                            } else if ($(this).attr("id") === "8") {
+                                console.log("yes");
+                                $("#jquery_jplayer_1").jPlayer("setMedia", {mp3: "9.Springish.mp3", title: json1.dataset[8].track_title});
+                                $("#jquery_jplayer_1").jPlayer("play");
+                            } else if ($(this).attr("id") === "9") {
+                                console.log("yes");
+                                $("#jquery_jplayer_1").jPlayer("setMedia", {mp3: "10.Starling.mp3", title: json1.dataset[9].track_title});
+                                $("#jquery_jplayer_1").jPlayer("play");
+                            }
+
+                        }
+                    }
+                });
+
+
+
+                $("#jquery_jplayer_1").jPlayer({
+                    ready: function () {
+                        $(this).jPlayer("setMedia", {
+                            title: "Rick and Morty Piano",
+                            mp3: "Song1"
+
+                        });
+                    },
+                    cssSelectorAncestor: "#jp_container_1",
+                    swfPath: "/js",
+                    supplied: "mp3",
+                    useStateClassSkin: true,
+                    autoBlur: false,
+                    smoothPlayBar: true,
+                    keyEnabled: true,
+                    remainingDuration: true,
+                    toggleDuration: true
+                });
+
+                console.log("hello");
+                //var keyindex = localStorage.length();
+
+                var email;
+                var password;
+                var confirmpassword;
+                var fname;
+                var lname;
+                $("#btn-signup").click(function () {
+
+                    email = $("#email").val();
+                    password = $("#password").val();
+                    fname = $("#txt-first-name").val();
+                    lname = $("#txt-last-name").val();
+                    confirmpassword = $("#txt-password-confirm").val();
+                    console.log(email);
+                    if ((email != "") && (password == confirmpassword) && (password != "")) {
+                        localStorage.setItem("email", email);
+                        localStorage.setItem("password", password);
+                        localStorage.setItem("firstname", fname);
+                        localStorage.setItem("lastname", lname);
+                        console.log("New User has been added.");
+                        $("#btn-signup").attr("href", "#dlg-sign-up-sent");
+                        document.getElementById("btn-signup").href = "#dlg-sign-up-sent";
+                    } else {
+                        $("#btn-signup").attr("href", "#dlg-invalid-registry");
+                    }
+                });
+
+                $("#btn-signin").click(function () {
+                    email = $("#txt-email").val();
+                    password = $("#txt-password").val();
+                    if ((localStorage.getItem("email") == email) && (localStorage.getItem("password") == password)) {
+                        console.log(email);
+                        window.location.href = "#home";
+
+                    }
+                    console.log(password);
+                });
+
+
+            });
+
+
+
+        </script>
+
+    </body>
+</html>
